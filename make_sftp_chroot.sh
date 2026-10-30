@@ -124,6 +124,8 @@ Match Group $GROUPNAME
    X11Forwarding no
 _EOF_
 
+
+service sshd restart
         echo "" >> $TMPX
         mv -f $TMPX /etc/ssh/sshd_config
 fi
